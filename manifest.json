@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "<RUM>Inspector",
+  "version": "2.5",
+  "description": "Enterprise element inspector for SolarWinds RUM and web platforms.",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icons/RUM48.png"
+  },
+  "icons": {
+    "16": "icons/RUM16.png",
+    "48": "icons/RUM48.png",
+    "128": "icons/RUM128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.solarwinds.com/*", "<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_start"
+    }
+  ],
+  "host_permissions": ["*://*.solarwinds.com/*", "<all_urls>"]
+}
