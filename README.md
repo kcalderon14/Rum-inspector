@@ -17,7 +17,7 @@ Since this is a custom internal tool, follow these steps to load it into your br
   - Select the folder containing the extension files.
   - The <RUM>Inspector icon should now appear in your extensions list.
 4. Refresh your Dashboard
-  - Navigate to your SolarWinds instance (e.g., platform-swdc.solarwinds.com) and Refresh the page to allow the script to inject.
+  - Navigate to your Webpage instance (e.g., test.com) and Refresh the page to allow the script to inject.
   
 🚀 How it Helps the User
 1. Instant Metadata Access
@@ -33,5 +33,4 @@ Since this is a custom internal tool, follow these steps to load it into your br
        - Redirect Tracking: If a link is a 301 or 302 redirect, it shows you the Final Destination URL before you even click it.
        - Parameter Splitting: It separates the Base URL from complex Query Parameters for easier reading.
 4. Optimized for Enterprise DashboardsStandard inspectors often fail on complex platforms due to security restrictions (CSP) or Shadow DOMs.
-   - How it helps: <RUM>Inspector uses Direct Style Injection and Composed Path Tracking, meaning it works perfectly inside iFrames and complex SolarWinds "Monitoring Pack" dashboards where other tools fail.
    
